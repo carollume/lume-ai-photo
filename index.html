@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#a90050"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icons/icon-192.png">
+<title>LUME AI PHOTO</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="brand"><span class="brandmark">L</span><div><b>LUME</b><small>AI PHOTO</small></div></div><span class="local">✦ EDIÇÃO NO SEU IPHONE</span></header>
+<main>
+<section id="home" class="screen active">
+<div class="hero"><div><p class="eyebrow">SUA FOTO, COM MAIS VIDA</p><h1>Um novo brilho<br><em>em cada detalhe.</em></h1><p class="sub">Escolha uma foto e descubra o seu melhor resultado.</p><button class="primary" id="start">Começar a editar <span>→</span></button></div><img src="mascote-lume.jpg" alt="Mascote LUME AI PHOTO"></div>
+<h2>Escolha seu estilo</h2>
+<div class="styles">
+<button class="style selected" data-style="hd"><span>✧</span><b>LUME HD</b><small>Realce de detalhes</small></button>
+<button class="style" data-style="beauty"><span>♡</span><b>BEAUTY</b><small>Retrato suave</small></button>
+<button class="style" data-style="low"><span>☾</span><b>LOW LIGHT</b><small>Fotos mais claras</small></button>
+<button class="style" data-style="batch"><span>▧</span><b>BATCH</b><small>Várias fotos</small></button>
+</div>
+</section>
+<section id="editor" class="screen">
+<button class="back" id="back">← Voltar</button><p class="eyebrow">ETAPA 01 · ESCOLHA SUAS FOTOS</p><h1>Vamos iluminar<br><em>suas memórias?</em></h1>
+<label class="picker">＋ Selecionar fotos da galeria<input id="photos" type="file" accept="image/*" multiple></label>
+<p class="hint">As imagens são processadas neste aparelho. Não são enviadas para um servidor.</p>
+<div id="selection" class="selection"></div>
+<div id="editarea" hidden><div class="preview-wrap"><div class="preview-label">PRÉVIA DA EDIÇÃO</div><canvas id="preview"></canvas></div>
+<div class="style-note" id="styleNote">LUME HD · Realce local de nitidez e contraste.</div>
+<div class="actions"><button class="secondary" id="original">Ver original</button><button class="primary" id="save">Salvar foto</button></div>
+</div>
+</section>
+</main>
+<footer> LUME AI PHOTO <span>Feito para suas melhores lembranças ✦</span></footer>
+<script src="app.js"></script>
+</body></html>

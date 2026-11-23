@@ -1,0 +1,15 @@
+LUME AI PHOTO — VERSÃO PWA INICIAL
+
+Esta é uma aplicação web instalável (PWA). Não é o projeto Swift/Xcode.
+Para usar:
+1. Publique TODOS os arquivos desta pasta em um serviço de hospedagem estática com HTTPS.
+2. Abra o endereço publicado no Safari do iPhone.
+3. Toque em Compartilhar > Adicionar à Tela de Início.
+4. Abra o ícone LUME na tela inicial.
+
+IMPORTANTE:
+- Esta versão processa as fotos localmente no navegador e não envia imagens para servidor.
+- Os efeitos atuais são ajustes de imagem por filtros e nitidez; ainda NÃO é IA de super-resolução.
+- A função de salvar baixa a imagem editada; no iPhone, dependendo da versão do iOS, pode ser necessário abrir o arquivo e salvar em Fotos.
+- Para funcionar como PWA/offline, hospede em HTTPS. Abrir o index.html diretamente não habilita instalação nem service worker.
+- Não há login, assinatura, créditos ou marca d'água.
